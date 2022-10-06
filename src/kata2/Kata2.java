@@ -17,7 +17,6 @@ public class Kata2 {
         for (Map.Entry<String, Integer> entry: map.entrySet()) {
             System.out.println("key: " + entry.getKey() + ", value: " + entry.getValue());
         }
-        
         /*System.out.println("··········");
         for (Integer key: map.keySet()) {
             System.out.println("key: " + key + ", value: " + map.get(key));
