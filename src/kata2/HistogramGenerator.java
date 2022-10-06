@@ -15,6 +15,7 @@ public class HistogramGenerator {
         for (int i = 0; i < data.length; i++) {
             histogram.put(data[i], histogram.containsKey(data[i])? histogram.get(data[i]) + 1 : 1);
         }
+        
         return histogram;
     }  
 }
