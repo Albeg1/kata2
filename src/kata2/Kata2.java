@@ -14,12 +14,8 @@ public class Kata2 {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         
         for (int i = 0; i < data.length; i++) {
+            map.put(data[i], map.containsKey(data[i])? map.get(data[i]) + 1 : 1);
             
-            if (map.containsKey(data[i])) {
-                map.put(data[i], map.get(data[i]) + 1);
-            } else {
-                map.put(data[i], 1);
-            }
         }
         
         for (Map.Entry<Integer, Integer> entry: map.entrySet()) {
