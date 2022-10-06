@@ -8,13 +8,13 @@ import java.util.Iterator;
 public class Kata2 {
 
     public static void main(String[] args) {
-        Integer [] data = {2, 4, 1, 4, 6, 7, 4, 6, 1, 9, 5, 3, 0, 1, 0, 3, 3, 3, 5, 2};
+        String [] data = {"Alejandro", "Alberto", "Rubén", "Alberto", "Giusepe", "Carlos", "Alberto", "Giusepe", "Rubén", "Mario", "Rosa", "Maria", "Marta", "Rubén", "Marta", "Maria", "Maria", "Maria", "Rosa", "Alejandro"};
         
         HistogramGenerator histogramGenerator = new HistogramGenerator(data);
-        Map<Integer, Integer> map = histogramGenerator.getHistogram();
+        Map<String, Integer> map = histogramGenerator.getHistogram();
         
         
-        for (Map.Entry<Integer, Integer> entry: map.entrySet()) {
+        for (Map.Entry<String, Integer> entry: map.entrySet()) {
             System.out.println("key: " + entry.getKey() + ", value: " + entry.getValue());
         }
         
